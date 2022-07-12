@@ -6,7 +6,7 @@ const mongoose = require('mongoose')
 //Código de conexion con la base de datos mongodb
 
 
-const uri = `mongodb+srv://${process.env.BD_USER}:${process.env.BD_PASSWORD}@cluster0.z59gy.mongodb.net/${process.env.BD_NAME}?retryWrites=true&w=majority`
+const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@cluster0.z59gy.mongodb.net/${process.env.DB_NAME}?retryWrites=true&w=majority`
 
 //Creamos la conexión
 mongoose.connect(uri, {useNewUrlParser: true, useUnifiedTopology: true});
