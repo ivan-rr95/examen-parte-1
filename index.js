@@ -58,6 +58,6 @@ app.get('/', (req,res)=>{
     res.send('Estas en la ruta raiz del examen')
 })
 //Levantamos el servidor
-app.listen(8000, ()=>{
+app.listen(process.env.PORT, ()=>{
     console.log('Servidor escuchando en el puerto 8000')
 })
