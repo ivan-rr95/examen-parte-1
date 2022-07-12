@@ -59,5 +59,5 @@ app.get('/', (req,res)=>{
 })
 //Levantamos el servidor
 app.listen(process.env.PORT, ()=>{
-    console.log('Servidor escuchando en el puerto 8000')
+    console.log('Servidor escuchando en el puerto ' + process.env.PORT)
 })
