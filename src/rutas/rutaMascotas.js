@@ -10,7 +10,7 @@ const rol = require('../middlewares/rol')
 const {leerMascotas, leerMascotasId, crearMascotas, modificarMascotasId, borrarMascotasId} = require('../controladores/controladoresMascotas')
 
 //get sirve para extraer datos de la base de datos
-rutaMascotas.get('/', auth, rol(['admin','registrado']), leerMascotas) //auth
+rutaMascotas.get('/', leerMascotas) //auth
 rutaMascotas.get('/:id', auth, rol(['admin']), leerMascotasId)
 
 //post sirve para escribir dentro de la base de datos
